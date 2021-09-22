@@ -1,0 +1,35 @@
+\documentclass[10pt]{article}
+
+\usepackage{booktabs}
+
+% Formatting
+\usepackage[left=1in, right=1in]{geometry}
+
+\newcommand{\toptitlebar}{
+  \hrule height 4pt
+  \vskip 0.25in
+  \vskip -\parskip%
+}
+\newcommand{\bottomtitlebar}{
+  \vskip 0.29in
+  \vskip -\parskip
+  \hrule height 1pt
+  \vskip 0.09in%
+}
+\renewcommand{\maketitle}{
+  \vbox{%
+    \hsize\textwidth
+    \linewidth\hsize
+    \vskip 0.1in
+    \toptitlebar
+    \centering
+    {\LARGE\bf 6.867: Homework 1\par}
+    \bottomtitlebar
+    \begin{tabular}[t]{c}\bf\rule{0pt}{24pt}
+      Anonymous Author(s)
+      % Marius Lindegaard
+    \end{tabular}%
+  }
+}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5.5pt}
